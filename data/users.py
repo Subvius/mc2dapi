@@ -17,7 +17,7 @@ class User(SqlAlchemyBase):
     last_logout = sqlalchemy.Column(sqlalchemy.FLOAT,
                                     default=datetime.datetime.now().timestamp())
     uuid: str = sqlalchemy.Column(sqlalchemy.String, unique=True, index=True, nullable=False)
-    cloak: str = sqlalchemy.Column(sqlalchemy.String, default="")
+    cloak: str = sqlalchemy.Column(sqlalchemy.String)
     password: str = sqlalchemy.Column(sqlalchemy.String, nullable=False)
     skin_uuid: str = sqlalchemy.Column(sqlalchemy.String)
     reputation: dict = sqlalchemy.Column(sqlalchemy.PickleType, nullable=False, default={
