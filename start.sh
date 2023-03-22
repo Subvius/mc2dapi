@@ -9,6 +9,8 @@ export PYTHONUNBUFFERED=true
 # Install Python 3 virtual env
 VIRTUALENV=./venv
 
+sh noroot install python
+
 if [ ! -d $VIRTUALENV ]; then
   python3 -m venv $VIRTUALENV
 fi
