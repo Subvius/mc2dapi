@@ -11,10 +11,10 @@ class Guild(SqlAlchemyBase):
                            primary_key=True, autoincrement=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=False, unique=True, index=True)
     desc = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    created_at = sqlalchemy.Column(sqlalchemy.DateTime,
-                                   default=datetime.datetime.now)
-    updated_at = sqlalchemy.Column(sqlalchemy.DateTime,
-                                   default=datetime.datetime.now)
+    created_at = sqlalchemy.Column(sqlalchemy.FLOAT,
+                                   default=datetime.datetime.now().timestamp())
+    updated_at = sqlalchemy.Column(sqlalchemy.FLOAT,
+                                   default=datetime.datetime.now().timestamp())
     members = sqlalchemy.Column(sqlalchemy.PickleType, default={})
     gexp = sqlalchemy.Column(sqlalchemy.PickleType, default={})
     owner_uuid = sqlalchemy.Column(sqlalchemy.String, sqlalchemy.ForeignKey("users.uuid"))

@@ -10,12 +10,12 @@ class User(SqlAlchemyBase):
     id = sqlalchemy.Column(sqlalchemy.Integer,
                            primary_key=True, autoincrement=True)
     nickname: str = sqlalchemy.Column(sqlalchemy.String, nullable=False, unique=True, index=True)
-    first_login = sqlalchemy.Column(sqlalchemy.DateTime,
-                                    default=datetime.datetime.now)
-    last_login = sqlalchemy.Column(sqlalchemy.DateTime,
-                                   default=datetime.datetime.now)
-    last_logout = sqlalchemy.Column(sqlalchemy.DateTime,
-                                    default=datetime.datetime.now)
+    first_login = sqlalchemy.Column(sqlalchemy.FLOAT,
+                                    default=datetime.datetime.now().timestamp())
+    last_login = sqlalchemy.Column(sqlalchemy.FLOAT,
+                                   default=datetime.datetime.now().timestamp())
+    last_logout = sqlalchemy.Column(sqlalchemy.FLOAT,
+                                    default=datetime.datetime.now().timestamp())
     uuid: str = sqlalchemy.Column(sqlalchemy.String, unique=True, index=True, nullable=False)
     cloak: str = sqlalchemy.Column(sqlalchemy.String, default="")
     password: str = sqlalchemy.Column(sqlalchemy.String, nullable=False)

@@ -1,3 +1,4 @@
+import datetime
 import json
 from pprint import pprint
 
@@ -26,5 +27,8 @@ link = 'http://127.0.0.1:5000/'
 
 
 res = requests.get(link + "player", params={"player": "Subvius"})
+# print(datetime.datetime.now().timestamp())
+# res = requests.post(link + "player", params={"player": "Subvius"},
+#                     data=json.dumps({"last_login": datetime.datetime.now().timestamp()}))
 
 pprint(res.json())
