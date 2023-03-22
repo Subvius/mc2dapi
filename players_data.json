@@ -1,0 +1,86 @@
+{
+  "Artur": {
+    "cosmetics": {},
+    "first_login": 1679073202.175358,
+    "id": "d24b3114-a720-4f86-a15b-3e3e0926b360",
+    "last_logout": 1679073202.175519,
+    "nickname": "Artur",
+    "password": "12346578",
+    "stats": {}
+  },
+  "Karim": {
+    "first_login": 1675629682.86494,
+    "id": "6df84e6f-3dcf-4f38-b2ba-defb85dce9cc",
+    "last_login": 1678717139.546374,
+    "last_logout": 1678717262.566263,
+    "nickname": "Karim",
+    "password": "12345678",
+    "reputation": {
+      "killer": 4,
+      "smuggler": 96
+    },
+    "stats": {
+      "blocks_mined": 7,
+      "blocks_placed": 21,
+      "play_time": 3387
+    }
+  },
+  "Nikita": {
+    "cosmetics": {},
+    "first_login": 1678444693.526236,
+    "id": "dec61517-4027-4e31-bc5a-f8769c5a1948",
+    "last_login": 1678719994.911384,
+    "last_logout": 0,
+    "nickname": "Nikita",
+    "password": "12345678",
+    "stats": {
+      "play_time": 358
+    }
+  },
+  "Subvius": {
+    "active_tasks": {
+      "2e0603a8-2f17-41e4-aeef-32f47d8af955": {
+        "deadline": -1,
+        "fraction": "robber",
+        "id": "2e0603a8-2f17-41e4-aeef-32f47d8af955",
+        "questor": "\u0426\u0435\u0431\u043a",
+        "requirements": [
+          {
+            "check_param": "location == 'Fox tavern'",
+            "title": "\u041f\u043e\u0441\u0435\u0442\u0438\u0442\u044c \u0442\u0430\u0432\u0435\u0440\u043d\u0443 \u0432 \u0434\u0430\u043b\u044c\u043d\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0437\u0430\u043c\u043a\u0430.",
+            "type": "check_location"
+          }
+        ],
+        "short_desc": "\u0426\u0435\u0431\u043a \u0430\u0440\u0435\u043d\u0434\u043e\u0432\u0430\u043b \u0434\u043b\u044f \u043c\u0435\u043d\u044f \u043a\u043e\u043c\u043d\u0430\u0442\u0443 \u0432 \u0442\u0430\u0432\u0435\u0440\u043d\u0435 \u043a\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \"\u041b\u0438\u0441\u0430\". \u041d\u0430\u0434\u043e \u0431\u044b \u0433\u043b\u044f\u043d\u0443\u0442\u044c \u0447\u0442\u043e \u044d\u0442\u043e \u0437\u0430 \u043c\u0435\u0441\u0442\u0435\u0447\u043a\u043e.",
+        "title": "\u041f\u043e\u0441\u0435\u0442\u0438\u0442\u044c \u0442\u0430\u0432\u0435\u0440\u043d\u0443 \u0432 \u0437\u0430\u043c\u043a\u0435",
+        "type": "exploring"
+      }
+    },
+    "cloak": "8bitsunset",
+    "cosmetics": {
+      "cloaks": [
+        "8bitsunset",
+        "8bitstar"
+      ]
+    },
+    "first_login": 1674994210.761344,
+    "id": "c4afefee-c383-4c73-8185-fa580ab1827e",
+    "last_login": 1679064114.234438,
+    "last_logout": 1679064168.888661,
+    "nickname": "Subvius",
+    "password": "12345678",
+    "reputation": {
+      "killer": 150,
+      "magician": 275,
+      "robber": 150,
+      "smuggler": 150,
+      "spice": 150
+    },
+    "skin_uuid": "f7c77d999f154a66a87dc4a51ef30d19",
+    "stats": {
+      "blocks_mined": 10236,
+      "blocks_placed": 9285,
+      "play_time": 44115
+    }
+  }
+}
