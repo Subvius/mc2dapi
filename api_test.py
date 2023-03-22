@@ -7,7 +7,6 @@ import requests
 #
 link = 'http://127.0.0.1:5000/'
 
-
 # res = requests.post(link + "player", params={"player": "Subvius", "add_task": True}, data=json.dumps({
 #     "id": "2e0603a8-2f17-41e4-aeef-32f47d8af955",
 #     "title": "Посетить Лиса",
@@ -24,6 +23,7 @@ link = 'http://127.0.0.1:5000/'
 #     "fraction": "нейтральная",
 #     "deadline": -1
 # }))
+
 
 res = requests.get(link + "player", params={"player": "Subvius"})
 

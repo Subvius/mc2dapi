@@ -85,12 +85,20 @@ def get_player_data():
                         })
 
                 else:
+
                     for key in keys:
                         if key in list(user.jsonify().keys()):
-                            exec(f"user.{key} = {player_update.get(key)}")
+                            new_value = player_update.get(key)
+                            if isinstance(new_value, str):
+                                exec(f"user.{key} = '{player_update.get(key)}'")
+                            else:
+                                exec(f"user.{key} = {player_update.get(key)}")
+                            db_sess.query(User).filter(User.uuid == user.uuid).update(
+                                {eval(f"User.{key}"): eval(f"user.{key}"), }
+                            )
 
                 db_sess.query(User).filter(User.uuid == user.uuid).update(
-                    {User.active_tasks: user.active_tasks}
+                    {User.active_tasks: user.active_tasks, User.stats: user.stats}
                 )
                 db_sess.commit()
 
@@ -104,7 +112,7 @@ def get_player_data():
     return response
 
 
-@app.route("/auth/", methods=["GET", "POST"])
+@app.route("/auth/", methods=["GET"])
 def auth():
     method = request.method
     nickname = request.args.get("nickname")
@@ -253,4 +261,4 @@ def get_game_data():
 
 
 port = int(os.environ.get("PORT", 5000))
-app.run(host='0.0.0.0', port=port)
+app.run(port=port)
